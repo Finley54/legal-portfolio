@@ -1,17 +1,33 @@
-const root = document.documentElement;
-const swatches = document.querySelectorAll(".swatch");
 const filters = document.querySelectorAll(".filter");
 const projectCards = document.querySelectorAll(".project-card");
 const toast = document.querySelector(".toast");
 let toastTimer;
 
-swatches.forEach((button) => {
-  button.addEventListener("click", () => {
-    const theme = button.dataset.theme;
-    root.dataset.theme = theme;
-    swatches.forEach((item) => item.classList.toggle("active", item === button));
+const revealTargets = document.querySelectorAll(
+  ".proof-card, .section-head, .bridge-card, .project-card, .featured-report, .report-item, .profile-block, .contact"
+);
+
+if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) {
+  revealTargets.forEach((element) => element.classList.add("visible"));
+} else {
+  revealTargets.forEach((element, index) => {
+    element.classList.add("reveal");
+    element.style.setProperty("--reveal-delay", `${(index % 4) * 70}ms`);
   });
-});
+
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("visible");
+        revealObserver.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.14 }
+  );
+
+  revealTargets.forEach((element) => revealObserver.observe(element));
+}
 
 filters.forEach((button) => {
   button.addEventListener("click", () => {
