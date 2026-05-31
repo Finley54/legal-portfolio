@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="PIPL、CCPA 与 GDPR 的比较研究，围绕适用范围、合法性基础、删除权、跨境传输和责任体系展开。" />
+    <title>PIPL、CCPA 与 GDPR 的比较研究 | 李子礽研究报告</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="report.css?v=paragraph-indent" />
+  </head>
+  <body class="report-page">
+    <div class="site-noise" aria-hidden="true"></div>
+
+    <header class="report-topbar">
+      <a class="brand" href="../index.html#reports" aria-label="返回报告集研究区">
+        <span class="brand-mark">§</span>
+        <span>
+          <strong>李子礽</strong>
+          <small>Research Demo</small>
+        </span>
+      </a>
+      <a class="back-link" href="../index.html#reports">返回报告集</a>
+    </header>
+
+    <main>
+      <section class="report-hero">
+        <p class="eyebrow">PIPL / GDPR / CCPA / Privacy Compliance</p>
+        <h1><span>PIPL、CCPA 与 GDPR 的</span><span>比较研究</span></h1>
+        <p>
+          从个人信息定义、敏感信息、合法性基础、删除权、可携带权、跨境传输与责任体系比较三套规则。
+        </p>
+        <div class="report-tags" aria-label="报告关键词">
+          <span>PIPL</span>
+          <span>GDPR</span>
+          <span>CCPA</span>
+          <span>数据合规</span>
+        </div>
+      </section>
+
+      <div class="report-shell">
+        <aside class="report-toc" aria-label="报告目录">
+          <strong>目录</strong>
+          <a class="toc-level-2" href="#section-1">一、概述：三条不同的立法路径</a>
+<a class="toc-level-2" href="#section-2">二、适用范围与核心定义</a>
+<a class="toc-level-3" href="#section-3">2.1 域外适用</a>
+<a class="toc-level-3" href="#section-4">2.2 个人信息定义</a>
+<a class="toc-level-3" href="#section-5">2.3 敏感个人信息 / 特殊类型数据</a>
+<a class="toc-level-3" href="#section-6">2.4 受规制的实体</a>
+<a class="toc-level-2" href="#section-7">三、合法性基础与同意规则</a>
+<a class="toc-level-3" href="#section-8">3.1 合法性基础</a>
+<a class="toc-level-3" href="#section-9">3.2 同意规则</a>
+<a class="toc-level-2" href="#section-10">四、数据主体权利</a>
+<a class="toc-level-3" href="#section-11">4.1 删除权（核心权利对比）</a>
+<a class="toc-level-3" href="#section-12">4.2 可携带权</a>
+<a class="toc-level-3" href="#section-13">4.3 其他权利简要对比</a>
+<a class="toc-level-2" href="#section-14">五、跨境数据传输</a>
+<a class="toc-level-2" href="#section-15">六、处理者义务与大型平台特殊义务</a>
+<a class="toc-level-3" href="#section-16">6.1 一般处理者义务</a>
+<a class="toc-level-3" href="#section-17">6.2 大型平台特别义务（守门人条款）</a>
+<a class="toc-level-2" href="#section-18">七、法律责任</a>
+<a class="toc-level-3" href="#section-19">7.1 行政责任</a>
+<a class="toc-level-3" href="#section-20">7.2 民事责任</a>
+<a class="toc-level-3" href="#section-21">7.3 刑事责任</a>
+<a class="toc-level-2" href="#section-22">八、十个 PIPL 比 GDPR 更严格的领域</a>
+<a class="toc-level-2" href="#section-23">九、结论</a>
+<a class="toc-level-3" href="#section-24">9.1 三条立法路径不可简单比较</a>
+<a class="toc-level-3" href="#section-25">9.2 PIPL 的严格与粗疏并存</a>
+<a class="toc-level-3" href="#section-26">9.3 CCPA 的另一套设计逻辑</a>
+<a class="toc-level-3" href="#section-27">9.4 对实务的影响</a>
+        </aside>
+
+        <article class="report-article">
+<blockquote><p><strong>比较框架说明</strong>：本文以 PIPL 为出发点逐项对照另两部法。PIPL 没有而其他法有的制度（如 GDPR 的正当利益、被遗忘权），也一并列出，不因 PIPL 缺失而略过——缺失本身就是对比信息。</p></blockquote>
+<h2 id="section-1">一、概述：三条不同的立法路径</h2>
+<p>全球个人信息保护立法呈现三条截然不同的路径，分别反映了不同的制度逻辑和价值取向。</p>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>中国 PIPL</th><th>欧盟 GDPR</th><th>美国加州 CCPA&amp;CPRA</th></tr></thead><tbody><tr><td><strong>立法模式</strong></td><td>综合性一般立法</td><td>综合性一般立法</td><td>消费者保护领域专门立法（形式上）</td></tr><tr><td><strong>核心定位</strong></td><td>保护个人信息权益 + 规范处理活动 + 促进合理利用</td><td>保护自然人基本权利与自由（基本权利导向）</td><td>赋予消费者有限控制权，实质性偏重企业创新空间（商业赋权导向）</td></tr><tr><td><strong>通过时间</strong></td><td>2021年8月20日</td><td>2016年4月27日</td><td>CCPA 2018年 / CPRA 2020年11月</td></tr><tr><td><strong>生效时间</strong></td><td>2021年11月1日</td><td>2018年5月25日</td><td>CCPA 2020年1月1日 / CPRA 2023年1月1日</td></tr><tr><td><strong>条文规模</strong></td><td>8章74条</td><td>11章99条 + 173条叙文</td><td>加州民法典 Title 1.81.5（约30节）</td></tr><tr><td><strong>配套法规</strong></td><td>网信办条例、部门规章、司法解释</td><td>EDPB指南、成员国DPA</td><td>CalPPA条例、AG意见</td></tr></tbody></table></div>
+<p>三条路径的本质差异在于：欧盟以<strong>基本权利保护</strong>为宪法基础，中国以<strong>国家数据主权 + 个体权益保护</strong>为双支柱，加州立法形式上属消费者保护领域，但制度设计实质性偏向<strong>企业创新空间</strong>（opt-out 模式、私人诉权极窄、删除权例外最多）。</p>
+<hr />
+<h2 id="section-2">二、适用范围与核心定义</h2>
+<h3 id="section-3">2.1 域外适用</h3>
+<p>三法对跨境适用或实际外溢覆盖的设计不同：</p>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>PIPL（第3条）</th><th>GDPR（第3条）</th><th>CCPA</th></tr></thead><tbody><tr><td><strong>域外适用标准</strong></td><td>以向境内自然人提供产品或服务为目的，或分析评估境内自然人行为</td><td>向欧盟数据主体提供商品或服务，或监控其行为（无论是否付费）</td><td><strong>无 GDPR/PIPL 式域外适用条款</strong>；通过&quot;在加州开展业务 + 达到门槛&quot;产生实际外溢适用</td></tr><tr><td><strong>扩张程度</strong></td><td>中等</td><td>最广</td><td>非明文域外适用；取决于是否在加州开展业务并达到适用门槛</td></tr></tbody></table></div>
+<p>GDPR 的域外适用最广——&quot;监控行为&quot;仅需行为在欧盟境内发生，无需位于欧盟的数据主体处于被动接收服务的角色。PIPL 有所限制，仅分析&quot;境内自然人&quot;的行为。CCPA 是州法，没有 GDPR/PIPL 式域外适用条款，但外州或外国企业只要在加州开展业务并满足门槛，仍可能被纳入适用范围。</p>
+<h3 id="section-4">2.2 个人信息定义</h3>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>PIPL（第4条）</th><th>GDPR（第4条第1款）</th><th>CCPA（1798.140）</th></tr></thead><tbody><tr><td><strong>定义方式</strong></td><td>&quot;与已识别或可识别的自然人有关的各种信息&quot;（信息关联型）</td><td>&quot;与已识别或可识别的自然人有关的任何信息&quot;（信息关联型）</td><td>&quot;能够合理地与特定消费者或家庭关联的信息&quot;（合理关联型）</td></tr><tr><td><strong>匿名化信息</strong></td><td>排除</td><td>排除</td><td>排除</td></tr><tr><td><strong>去标识化信息</strong></td><td>仍属个人信息</td><td>仍属个人数据（假名化）</td><td><strong>不纳入规制范围</strong></td></tr><tr><td><strong>公开信息</strong></td><td>合理范围内处理（第27条）</td><td>仍属个人数据</td><td>排除（不视为个人信息）</td></tr><tr><td><strong>家庭/设备</strong></td><td>不含</td><td>不含</td><td><strong>含家庭和设备</strong>（CCPA 特色）</td></tr></tbody></table></div>
+<p>关键差异：CCPA 将去标识化信息和公开信息排除在保护范围之外，为企业采用去标识化技术提供了明确的合规激励。PIPL 和 GDPR 的去标识化信息仍受保护。</p>
+<h3 id="section-5">2.3 敏感个人信息 / 特殊类型数据</h3>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>PIPL（第28条）</th><th>GDPR（第9条）</th><th>CCPA（1798.121）</th></tr></thead><tbody><tr><td><strong>处理原则</strong></td><td>特定目的 + 充分必要 + 严格保护 + 单独同意</td><td><strong>原则上禁止</strong>，例外允许（明确同意等）</td><td>消费者可<strong>限制</strong>用于提供商品或服务以外的目的</td></tr><tr><td><strong>类别数量</strong></td><td>7类（生物识别/宗教信仰/特定身份/医疗健康/金融账户/行踪轨迹/未成年人）</td><td>特殊类型数据（种族/政治/宗教/工会/基因/生物识别/健康/性生活）</td><td>精确地理位置 / 种族/民族 / 宗教 / 基因 / 生物识别 / 健康 / 性生活等</td></tr><tr><td><strong>同意模式</strong></td><td>opt-in（单独同意）</td><td>opt-in（明确同意）</td><td><strong>opt-out</strong>（限制处理请求权）</td></tr></tbody></table></div>
+<p>CCPA 的敏感信息处理采用 opt-out 模式，而非中国和欧盟的 opt-in 禁令模式——这是三法间最核心的范式差异之一。</p>
+<h3 id="section-6">2.4 受规制的实体</h3>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>PIPL</th><th>GDPR</th><th>CCPA</th></tr></thead><tbody><tr><td><strong>实体类型</strong></td><td>个人信息处理者 + 受托处理者</td><td>控制者 + 处理者</td><td>企业 + 服务提供者 + 承包商</td></tr><tr><td><strong>适用门槛</strong></td><td>无（任何处理者均须遵守）</td><td>无（任何控制者/处理者均须遵守）</td><td><strong>有</strong>：年收入超2500万美元 / 处理10万以上消费者信息 / 50%以上年收入来自出售或共享消费者个人信息</td></tr><tr><td><strong>小型实体</strong></td><td>无豁免（仅部分义务可简化）</td><td>部分简化（如中小企业部分记录义务豁免）</td><td><strong>低于门槛者不适用</strong></td></tr></tbody></table></div>
+<p>CCPA 的门槛制度意味着大量中小企业完全不受其约束——这与 PIPL 和 GDPR 的全覆盖模式形成鲜明对比。</p>
+<hr />
+<h2 id="section-7">三、合法性基础与同意规则</h2>
+<p>这是三法最核心的操作性差异。</p>
+<h3 id="section-8">3.1 合法性基础</h3>
+<p>PIPL 列举了 7 项合法性基础（第13条），GDPR 列举了 6 项（第6条），CCPA 不设法定基础清单。</p>
+<div class="table-wrap"><table><thead><tr><th>PIPL（第13条）</th><th>GDPR（第6条）</th><th>CCPA</th></tr></thead><tbody><tr><td>（一）取得个人的同意</td><td>（a）数据主体同意</td><td>opt-out 为基本模式：出售/共享个人信息→可 opt-out；敏感信息→可限制用途</td></tr><tr><td>（二）为订立、履行个人作为一方当事人的合同所必需，或按劳动规章制度/集体合同实施人力资源管理所必需</td><td>（b）履行合同所必需 / （f）正当利益（人力资源管理场景被涵盖于此）</td><td>合同履行场景默认可处理（无专门法定基础清单）</td></tr><tr><td>（三）为履行法定职责或法定义务所必需</td><td>（c）为履行控制者的法定义务所必需</td><td>同</td></tr><tr><td>（四）为应对突发公共卫生事件，或紧急情况下保护生命健康和财产安全所必需</td><td>（d）为保护数据主体或他人的重大利益所必需</td><td>同</td></tr><tr><td>（五）为公共利益实施新闻报道、舆论监督等行为，在合理范围内处理</td><td>（e）为执行公共利益领域的任务或行使授予控制者的官方权力所必需</td><td>同</td></tr><tr><td>（六）在合理范围内处理个人自行公开或其他已合法公开的个人信息</td><td>无独立对应项（GDPR 下已公开信息仍受保护，需寻找其他合法性基础）</td><td>排除——公开信息不视为个人信息</td></tr><tr><td>（七）法律、行政法规规定的其他情形</td><td>—</td><td>—</td></tr><tr><td>无</td><td>（f）正当利益（三要素平衡测试：控制者或第三方的正当利益 &gt; 数据主体的利益/权利/自由）</td><td>不适用（opt-out 框架无此概念）</td></tr></tbody></table></div>
+<p><strong>关键差异点：</strong></p>
+<p>PIPL vs GDPR 的核心差异不在数量（7项 vs 6项），而在<strong>结构</strong>：</p>
+<ul><li>PIPL 将&quot;人力资源管理&quot;独立为一类合法性基础（第13条第1款第2项），而不依赖&quot;正当利益&quot;的弹性测试——这一立法选择的效果是限制了&quot;正当利益&quot;式弹性条款的适用空间</li><li>GDPR 的&quot;正当利益&quot;是三法中<strong>弹性最大</strong>的合法性基础，需要通过三要素平衡测试（正当利益评估 + 必要性测试 + 利益平衡），在实践中也是被企业最广泛援引的基础之一</li><li>PIPL 不设&quot;正当利益&quot;一般条款，意味着对信息处理者的处理权限做了更严格的预先划定——<strong>理论上更保护个人权益，但也减少了企业在模糊场景下的合规灵活性</strong></li><li>CCPA 不设合法性基础清单，以 opt-out 为默认规则——这与 GDPR/PIPL 的&quot;processing is prohibited unless lawful basis exists&quot;逻辑完全不同。所谓制度底层范式的差异，指的不是条文措辞不同，而是<strong>法律的第一步假设就反了</strong>：GDPR/PIPL 假设&quot;处理须有合法性基础，否则禁止&quot;，CCPA 假设&quot;处理可进行，消费者不同意特定用途时退出&quot;。这不是谁严谁宽的问题，是两个方向不同的制度设计。</li><li>表格中 CCPA 列的&quot;同&quot;，不是指 CCPA 也有同样的合法性基础分类——它根本没有这种分类。标&quot;同&quot;是因为在 opt-out 框架下，这些场景<strong>无需寻找合法性基础即可处理</strong>，处理结果上与 GDPR 一致。但制度出发点不同：GDPR 是&quot;找到合法性基础所以可以处理&quot;，CCPA 是&quot;不禁止所以可以处理&quot;。</li></ul>
+<h3 id="section-9">3.2 同意规则</h3>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>PIPL</th><th>GDPR</th><th>CCPA</th></tr></thead><tbody><tr><td><strong>基本模式</strong></td><td><strong>opt-in</strong>（选择加入）</td><td><strong>opt-in</strong>（选择加入）</td><td><strong>opt-out</strong>（选择退出）</td></tr><tr><td><strong>同意层级</strong></td><td>一般同意 + 单独同意（6种场景）+ 书面同意</td><td>一般同意 + 明确同意（特殊类型数据）</td><td>不设层级</td></tr><tr><td><strong>单独同意场景</strong></td><td>提供第三方/公开/敏感信息/跨境/图像身份/未成年人（6种）</td><td>特殊类型数据处理（明确同意）</td><td>财务激励计划须 opt-in（罕见例外）</td></tr><tr><td><strong>撤回同意</strong></td><td>便捷撤回 + 不影响撤回前处理</td><td>同撤回前处理有效</td><td>不适用（非同意基础模式）</td></tr><tr><td><strong>未成年人</strong></td><td>不满14岁监护人同意</td><td>不满16岁（成员国可降至13岁）</td><td>实际知悉未满16岁不得出售</td></tr><tr><td><strong>严格度排序</strong></td><td>最严</td><td>中等</td><td>最宽</td></tr></tbody></table></div>
+<p>PIPL 的同意规则在三法中最为细致——六种单独同意场景、较高的未成年人同意年龄（14岁，GDPR 成员国可下调至13岁）、以及对同意有效性的全方位要求。</p>
+<hr />
+<h2 id="section-10">四、数据主体权利</h2>
+<h3 id="section-11">4.1 删除权（核心权利对比）</h3>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>PIPL（第47条）</th><th>GDPR（第17条）（被遗忘权）</th><th>CCPA（1798.105）</th></tr></thead><tbody><tr><td><strong>行使情形</strong></td><td>5种明确列举</td><td>6种明确列举 + 被遗忘权（通知其他控制者）</td><td>以<strong>可验证消费者请求</strong>触发删除义务（不列举具体情形）</td></tr><tr><td><strong>例外范围</strong></td><td>法定保存期限未届满 / 技术难以实现（<strong>仅2种</strong>）</td><td>表达自由/法定职责/公共健康/研究统计/法律主张（5类）</td><td>言论自由/法定义务/公共研究/履行合同/安全事故侦测/调试修复/内部使用（<strong>7种以上</strong>）</td></tr><tr><td><strong>被遗忘权</strong></td><td>无</td><td><strong>有</strong>（控制者应通知其他控制者删除链接/副本/复制品）</td><td>无</td></tr><tr><td><strong>利益平衡</strong></td><td>倾向个人权利保护</td><td>权衡表达自由和公共利益</td><td>充分考量企业正当利益</td></tr></tbody></table></div>
+<p><strong>PIPL 第47条五类情形</strong>：</p>
+<ul><li>（一）处理目的已实现、无法实现或不再必要；</li><li>（二）处理者停止服务或保存期限届满；</li><li>（三）个人撤回同意；</li><li>（四）处理者违反法律、行政法规或约定处理；</li><li>（五）法律、行政法规规定的其他情形。</li></ul>
+<p><strong>GDPR 第17条六类情形</strong>： 删除权（第1款）</p>
+<ul><li>（a）数据对收集目的不再必要；</li><li>（b）数据主体撤回同意且无其他合法性基础；</li><li>（c）数据主体反对处理且无压倒性合法理由；</li><li>（d）个人数据被非法处理；</li><li>（e）为履行欧盟或成员国法律义务必须删除；</li><li>（f）涉及儿童数据（第8条第1款）。</li></ul>
+<p>被遗忘权（第2款）——控制者已公开数据的，应通知其他控制者删除链接、副本或复制品。</p>
+<p><strong>CCPA</strong>：不列举具体情形，以可验证消费者请求触发删除义务，但例外较多。</p>
+<p>PIPL 的删除权例外最少、保护最强力，但也意味着企业合规成本最高。CCPA 例外最广，体现了对企业正当利益的制度性包容。</p>
+<h3 id="section-12">4.2 可携带权</h3>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>PIPL（第45条）</th><th>GDPR（第20条）</th><th>CCPA（1798.100/1798.130）</th></tr></thead><tbody><tr><td><strong>权利内容</strong></td><td>请求将个人信息转移至指定处理者</td><td>以结构化、通用、机器可读格式接收并转移</td><td>请求披露 + 获取副本</td></tr><tr><td><strong>具体规则</strong></td><td>GB/T 46901-2025</td><td>EDPB指南已细化</td><td>12个月内可请求2次，45天+45天</td></tr><tr><td><strong>可操作性</strong></td><td>中等（国标为推荐性标准）</td><td>高（规则成熟）</td><td>中等</td></tr></tbody></table></div>
+<p>PIPL 的可携带权以&quot;符合国家网信部门规定条件&quot;为前提。GB/T 46901-2025 主要明确：</p>
+<ul><li><strong>转移范围</strong>：仅限主动提供及服务产生的<strong>个人信息</strong>，明确排除衍生数据（用户画像/风险评分等）</li><li><strong>无需响应的例外</strong>（GB/T 46901-2025 第6章）：法定职责或法定义务、合同必需、涉他人信息且<strong>无</strong>去标识化/同意/家庭事务使用措施、技术不可行、侵害商业秘密或知识产权</li><li><strong>收费</strong>：一般不收；请求明显超出合理限度或需额外签署协议时可收</li><li><strong>格式</strong>：结构化、通用、机器可读（CSV/XML/JSON）</li></ul>
+<p>该国标为推荐性标准，非强制执行。</p>
+<h3 id="section-13">4.3 其他权利简要对比</h3>
+<div class="table-wrap"><table><thead><tr><th>权利</th><th>PIPL</th><th>GDPR</th><th>CCPA</th></tr></thead><tbody><tr><td><strong>知情权/告知</strong></td><td>最细（接收方名称+联系方式，非仅类别）</td><td>较细</td><td>一般</td></tr><tr><td><strong>查阅权</strong></td><td>及时提供</td><td>1个月内（可延至3个月）</td><td>12个月一次（上限）</td></tr><tr><td><strong>更正权</strong></td><td>有（第46条）</td><td>有（第16条）</td><td>有（CPRA新增1798.106）</td></tr><tr><td><strong>反对权/拒绝权</strong></td><td>有限（自动化决策相关）</td><td>全面（营销/正当利益/科研等场景）</td><td>opt-out（出售/共享/敏感信息限制）</td></tr><tr><td><strong>自动化决策拒绝权</strong></td><td>有（第24条）</td><td>有（第22条）</td><td>有（CPRA新增1798.185）</td></tr></tbody></table></div>
+<hr />
+<h2 id="section-14">五、跨境数据传输</h2>
+<p>从法条结构看，PIPL 第三章与 GDPR 第五章均专门规定跨境数据传输规则；CCPA/CPRA 的制度重点在消费者权利、企业告知义务、选择退出和数据泄露责任，未设置同类跨境传输合规路径。因此本节仅比较 PIPL 与 GDPR。</p>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>PIPL（第38-43条）</th><th>GDPR（第44-49条）</th></tr></thead><tbody><tr><td><strong>传输路径</strong></td><td>安全评估 + 标准合同 + 认证（3种，条例扩展至8种）</td><td>充分性决定 + 适当保障措施（SCCs/BCRs/行为准则等）+ 8种例外</td></tr><tr><td><strong>数据本地化</strong></td><td><strong>有</strong>（CIIO + 处理量达网信部门规定阈值的处理者；第40条）</td><td><strong>无</strong></td></tr><tr><td><strong>境外执法调取</strong></td><td>未经主管机关批准不得提供（第41条，<strong>绝对前置批准</strong>）</td><td>须有国际条约基础 + 个案审查（第48条）</td></tr><tr><td><strong>对等反制</strong></td><td>有（第43条）</td><td>无</td></tr></tbody></table></div>
+<p>PIPL 的跨境传输制度在三个维度上比 GDPR 更严格：数据本地化义务（GDPR 无此概念）、境外执法调取的绝对前置批准（GDPR 设国际条约缓冲）、对等反制机制。</p>
+<hr />
+<h2 id="section-15">六、处理者义务与大型平台特殊义务</h2>
+<h3 id="section-16">6.1 一般处理者义务</h3>
+<div class="table-wrap"><table><thead><tr><th>义务</th><th>PIPL</th><th>GDPR</th><th>CCPA</th></tr></thead><tbody><tr><td><strong>安全保障</strong></td><td>最详细（加密/去标识化/访问控制/培训/应急预案/分类管理，第51条）</td><td>较详细（假名化/加密/保密性/可用性/恢复能力）</td><td>实施并维持合理安全程序</td></tr><tr><td><strong>保存期限</strong></td><td>实现目的所必要的<strong>最短时间</strong>（第19条）</td><td>不超过处理目的所必要的期限（第5条第1款e项）</td><td>无明确期限要求</td></tr><tr><td><strong>泄露通知</strong></td><td>立即通知监管 + 个人；可有效避免危害的可不通知个人（第57条）</td><td>72小时内通知DPA（第33条）</td><td>最适当时间，无不合理延迟</td></tr><tr><td><strong>DPIA</strong></td><td>7种触发情形（第55条），保存3年</td><td>高风险处理（第35条）</td><td>高风险处理（CPRA新增）</td></tr><tr><td><strong>DPO/个人信息保护负责人</strong></td><td>处理量达网信部门规定阈值的应指定（第52条）；较笼统</td><td>公共机构/大规模系统监控/大规模特殊类型数据（第37条）；最完整</td><td>无对应制度</td></tr></tbody></table></div>
+<h3 id="section-17">6.2 大型平台特别义务（守门人条款）</h3>
+<p>PIPL 第 58 条是<strong>全球首创</strong>——将竞争法领域的守门人概念引入个人信息保护。适用于&quot;重要互联网平台服务、用户数量巨大、业务类型复杂&quot;的处理者：</p>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>PIPL 第58条</th><th>欧盟 DMA</th><th>CCPA</th></tr></thead><tbody><tr><td><strong>领域</strong></td><td>个人信息保护</td><td>竞争法/反垄断</td><td>无</td></tr><tr><td><strong>量化认定</strong></td><td>注册5000万+ / 月活1000万+（条例第62条）</td><td>年营收≥75亿欧元 / 月活&gt;4500万+企业用户&gt;1万</td><td>无</td></tr><tr><td><strong>义务数量</strong></td><td>4项</td><td>17项</td><td>无</td></tr><tr><td><strong>核心义务</strong></td><td>独立监督机构+平台规则+停止违法服务+社会责任报告</td><td>向商业用户开放平台+互操作性+数据可携等</td><td>无</td></tr><tr><td><strong>罚款上限</strong></td><td>5000万或5%营收</td><td>全球年营收10%+系统性违规20%</td><td>无</td></tr></tbody></table></div>
+<hr />
+<h2 id="section-18">七、法律责任</h2>
+<h3 id="section-19">7.1 行政责任</h3>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>PIPL（第66条）</th><th>GDPR（第83条）</th><th>CCPA（1798.155）</th></tr></thead><tbody><tr><td><strong>罚款上限（企业）</strong></td><td><strong>5000万元以下或上年营业额5%以下</strong></td><td>2000万欧元或全球年营业额4%</td><td>每次违规2500美元/故意或未成年人违规7500美元</td></tr><tr><td><strong>一般违法</strong></td><td>100万元以下（拒不改正的）+ 没收违法所得 + 暂停业务</td><td>1000万欧元或2%</td><td>每次2500美元</td></tr><tr><td><strong>情节严重</strong></td><td>5000万元以下或5%以下 + 停业整顿 + 吊销许可</td><td>2000万欧元或4%</td><td>每次7500美元（故意或未成年人）</td></tr><tr><td><strong>个人责任</strong></td><td>直接责任人1万-100万罚款 + <strong>市场禁入</strong></td><td>无个人罚款（DPA可罚控制者/处理者）</td><td>无个人罚款</td></tr><tr><td><strong>信用惩戒</strong></td><td>记入信用档案 + 公示（第67条）</td><td>无</td><td>无</td></tr><tr><td><strong>执法机构</strong></td><td>多部门联合（网信/工信/公安/市场监管等10+机构）</td><td>独立DPA（一成员国一机构）</td><td>AG + CalPPA</td></tr></tbody></table></div>
+<p>PIPL 的罚款上限比例为 5%，超过 GDPR 的 4%，在全球个人信息保护立法中属于最高一档。此外，PIPL 独有的个人连带责任（直接责任人罚款+市场禁入）和信息惩戒机制，使其处罚体系与 GDPR 和 CCPA 相比覆盖面更广。</p>
+<h3 id="section-20">7.2 民事责任</h3>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>PIPL（第69条）</th><th>GDPR（第82条）</th><th>CCPA（1798.150）</th></tr></thead><tbody><tr><td><strong>诉权范围</strong></td><td><strong>宽</strong>：侵害个人信息权益造成损害</td><td><strong>宽</strong>：违反GDPR造成物质或非物质损害</td><td><strong>极窄</strong>：仅未加密数据泄露 + 特定信息类型</td></tr><tr><td><strong>归责原则</strong></td><td><strong>过错推定</strong>（处理者自证无过错）</td><td><strong>过错推定</strong>（控制者/处理者自证无过错）</td><td>过错责任</td></tr><tr><td><strong>损害赔偿</strong></td><td>实际损失或侵权人获益</td><td>物质或非物质损害（含非财产损害）</td><td>100-750美元法定赔偿或实际损害赔偿</td></tr><tr><td><strong>公益诉讼</strong></td><td><strong>有</strong>（检察院/消费者组织，第70条）</td><td>有（NGO代表诉讼，第80条）</td><td><strong>无</strong></td></tr><tr><td><strong>30天豁免期</strong></td><td>无</td><td>无</td><td><strong>有</strong>（企业30天内改正则免于金钱赔偿）</td></tr></tbody></table></div>
+<p>CCPA 的私人诉权是三者中最窄的——仅限未加密数据泄露场景，且被 Gardiner v. Walmart 案进一步限缩至两类特定信息类型组合（姓名+账号/密码等组合）。还设有 30 天纠正豁免期。这反映了美国隐私立法<strong>强化行政执法、弱化私人诉权</strong>的一贯策略。</p>
+<h3 id="section-21">7.3 刑事责任</h3>
+<div class="table-wrap"><table><thead><tr><th>维度</th><th>中国</th><th>欧盟</th><th>加州</th></tr></thead><tbody><tr><td><strong>刑事处罚</strong></td><td>侵犯公民个人信息罪：最高七年有期徒刑 + 罚金</td><td>无 GDPR 层面刑事责任（由成员国国内法规制）</td><td>无 CCPA 层面刑事责任</td></tr><tr><td><strong>执法活跃度</strong></td><td><strong>高</strong>（大量公诉案件）</td><td>低（取决于成员国）</td><td>极低</td></tr></tbody></table></div>
+<p>中国是全球个人信息保护领域刑事执法最活跃的法规，形成了行政+民事+刑事的三层执法体系。</p>
+<hr />
+<h2 id="section-22">八、十个 PIPL 比 GDPR 更严格的领域</h2>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>领域</th><th>PIPL</th><th>GDPR</th></tr></thead><tbody><tr><td>1</td><td><strong>合法性基础</strong></td><td>7项，不含&quot;正当利益&quot;（仅授权人力资源管理）</td><td>6项，含&quot;正当利益&quot;弹性条款</td></tr><tr><td>2</td><td><strong>同意层级</strong></td><td>一般同意 + 单独同意（6种）+ 书面同意</td><td>一般同意 + 明确同意（特殊类型数据）</td></tr><tr><td>3</td><td><strong>单独同意场景</strong></td><td>6种（提供/公开/敏感/跨境/图像/未成年人）</td><td>仅特殊类型数据须明确同意</td></tr><tr><td>4</td><td><strong>告知粒度</strong></td><td>须告知接收方名称或姓名+联系方式（非仅类别）</td><td>接收方类别即可</td></tr><tr><td>5</td><td><strong>告知时间</strong></td><td>必须<strong>处理前</strong>告知</td><td>收集时告知（非&quot;处理前&quot;）</td></tr><tr><td>6</td><td><strong>删除权例外</strong></td><td>仅2种</td><td>5种</td></tr><tr><td>7</td><td><strong>泄露通知</strong></td><td>立即通知监管 + 个人；但处理者采取有效措施避免危害的，可<strong>不通知个人</strong>（第57条第2款）</td><td>高风险时才通知个人，低风险可免</td></tr><tr><td>8</td><td><strong>罚款上限</strong></td><td>5000万元或<strong>5%</strong></td><td>2000万欧元或4%</td></tr><tr><td>9</td><td><strong>数据本地化</strong></td><td><strong>有</strong>（第40条）</td><td><strong>无</strong></td></tr><tr><td>10</td><td><strong>死者信息保护</strong></td><td><strong>有</strong>（近亲属行使权利，第49条）</td><td>无（叙文第27条允许成员国自行规定）</td></tr></tbody></table></div>
+<hr />
+<h2 id="section-23">九、结论</h2>
+<h3 id="section-24">9.1 三条立法路径不可简单比较</h3>
+<p>三法在立法模式上的差异决定了它们不是同一类法律工具。试图在三者之间做&quot;谁更好&quot;的价值判断是偏离制度现实的——欧盟的基本权利传统、中国的数据主权导向、加州的消费者赋权逻辑，分别植根于不同的宪法结构和市场环境。</p>
+<h3 id="section-25">9.2 PIPL 的严格与粗疏并存</h3>
+<p>PIPL 在合法性基础、同意规则、删除权、罚款上限、个人连带责任、数据本地化等十个维度上比 GDPR 更严格；但在可携带权配套规则、DPO 独立性保障、政府机构数据处理的监督路径等方面存在制度空缺。 不能简单地将PIPL同GDPR进行宽严程度上的对比——PIPL是<strong>部分制度构建更加严格、部分制度构建粗疏的不均衡结构</strong>。</p>
+<h3 id="section-26">9.3 CCPA 的另一套设计逻辑</h3>
+<p>CCPA 的制度设计围绕两个核心展开：opt-out 同意模式（降低企业合规负担）和极窄的私人诉权（30天豁免期 + 仅未加密数据泄露可诉）。其消费者保护定位决定了它不适合与 GDPR/PIPL 的综合性一般立法做一一对应的对比——它没有&quot;合法性基础&quot;的概念、没有&quot;目的限定原则&quot;的完整体系、没有跨境传输制度。</p>
+<h3 id="section-27">9.4 对实务的影响</h3>
+<p>对跨国企业而言，三法同时适用的场景越来越常见。在此情形下，<strong>PIPL 在多个维度上合规要求最高</strong>——同意分层最细、删除权例外最少、罚款比例最高、且附带了 GDPR 和 CCPA 均不具备的数据本地化和对等反制机制。但满足 PIPL 的高标准并不意味着可以忽略 GDPR 中 PIPL 所不具备的制度（如正当利益弹性条款、被遗忘权、DPO 独立性保护），三者各有不可替代的合规关注点。</p>
+        </article>
+      </div>
+    </main>
+
+    <script src="report.js"></script>
+  </body>
+</html>

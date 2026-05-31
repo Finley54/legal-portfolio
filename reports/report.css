@@ -48,13 +48,17 @@
 }
 
 .report-hero h1 {
-  max-width: 14ch;
+  max-width: 15em;
   color: var(--report-heading);
-  font-size: clamp(2.7rem, 7.5vw, 6.8rem);
-  line-height: 0.95;
+  font-size: clamp(2.45rem, 5vw, 4.8rem);
+  line-height: 1.08;
   text-shadow:
-    0.035em 0.035em 0 rgba(73, 255, 130, 0.32),
-    -0.02em 0.06em 0 rgba(255, 62, 165, 0.18);
+    0.028em 0.028em 0 rgba(73, 255, 130, 0.28),
+    -0.016em 0.052em 0 rgba(255, 62, 165, 0.16);
+}
+
+.report-hero h1 span {
+  display: block;
 }
 
 .report-hero p:not(.eyebrow) {
@@ -141,12 +145,12 @@
 
 .report-article h2 {
   position: relative;
-  margin: 3.2rem 0 1.1rem;
-  padding-bottom: 0.55rem;
+  margin: 2.75rem 0 1rem;
+  padding-bottom: 0.48rem;
   border-bottom: 2px solid var(--report-rule);
   color: var(--report-heading);
-  font-size: clamp(2rem, 4vw, 3.4rem);
-  line-height: 1.05;
+  font-size: clamp(1.65rem, 2.9vw, 2.55rem);
+  line-height: 1.16;
 }
 
 .report-article h2::after {
@@ -166,8 +170,8 @@
 .report-article h3 {
   margin: 2.2rem 0 0.9rem;
   color: var(--report-heading);
-  font-size: clamp(1.45rem, 2.8vw, 2.1rem);
-  line-height: 1.12;
+  font-size: clamp(1.28rem, 2.1vw, 1.72rem);
+  line-height: 1.2;
 }
 
 .report-article h4 {
@@ -185,11 +189,19 @@
 
 .report-article p {
   margin: 0.8rem 0;
+  text-indent: 2em;
 }
 
 .report-article strong {
   color: var(--ink);
-  font-weight: 950;
+  font-family: var(--heading-sans);
+  font-weight: 900;
+}
+
+.callout-title strong {
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
 }
 
 .report-article ul,
@@ -236,6 +248,22 @@
   font-weight: 950;
 }
 
+.report-figure {
+  margin: 1rem 0 1.35rem;
+  overflow-x: auto;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  background: #fffdf7;
+  box-shadow: 5px 5px 0 rgba(18, 18, 18, 0.14);
+}
+
+.report-figure img {
+  display: block;
+  width: 100%;
+  min-width: 42rem;
+  height: auto;
+}
+
 .callout {
   margin: 1.2rem 0;
   overflow: hidden;
@@ -253,6 +281,7 @@
   padding: 0.75rem 0.95rem;
   background: #f8e8ee;
   color: #35332f;
+  font-family: var(--heading-sans);
   font-size: 1.1rem;
   font-weight: 950;
 }
@@ -272,6 +301,7 @@
 .callout p {
   margin: 0;
   padding: 0.95rem;
+  text-indent: 0;
 }
 
 .callout-insight {
@@ -343,7 +373,7 @@ code {
   }
 
   .report-hero h1 {
-    font-size: clamp(2.4rem, 14vw, 4.2rem);
+    font-size: clamp(2.2rem, 11vw, 3.6rem);
   }
 
   .flow-row {
