@@ -760,6 +760,10 @@ h1 {
   line-height: 1.02;
 }
 
+.contact h2 {
+  margin-bottom: 0.55rem;
+}
+
 .section-head p:not(.eyebrow),
 .contact p {
   margin: 0;
@@ -877,6 +881,58 @@ h1 {
   gap: 1rem;
 }
 
+.project-group-label {
+  display: flex;
+  grid-column: 1 / -1;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 0.25rem;
+  color: var(--ink);
+}
+
+.project-group-label + .project-card {
+  margin-top: 0;
+}
+
+.project-group-label[data-group="research"] {
+  margin-top: 0.65rem;
+}
+
+.project-group-label::after {
+  flex: 1 1 auto;
+  height: 2px;
+  background: rgba(23, 21, 18, 0.18);
+  content: "";
+}
+
+.project-group-label span {
+  display: inline-flex;
+  min-height: 2.1rem;
+  align-items: center;
+  padding: 0.28rem 0.75rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  color: var(--paper);
+  background: var(--ink);
+  font-family: var(--heading-sans);
+  font-size: 0.96rem;
+  font-weight: 1000;
+  line-height: 1;
+}
+
+.project-group-label small {
+  color: var(--muted);
+  font-family: var(--label);
+  font-size: 0.68rem;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.project-group-label.hidden {
+  display: none;
+}
+
 .project-card {
   position: relative;
   grid-column: span 2;
@@ -892,8 +948,8 @@ h1 {
     box-shadow 180ms ease;
 }
 
-.project-card:nth-child(1),
-.project-card:nth-child(2) {
+.project-card:nth-of-type(1),
+.project-card:nth-of-type(2) {
   grid-column: span 3;
 }
 
@@ -1070,19 +1126,14 @@ h1 {
 
 .featured-report::after {
   position: absolute;
-  right: -7rem;
-  top: -7rem;
-  width: 18rem;
-  height: 18rem;
-  border: 2px dashed rgba(23, 21, 18, 0.22);
-  background:
-    repeating-linear-gradient(
-      -45deg,
-      rgba(49, 92, 255, 0.2) 0 8px,
-      rgba(255, 225, 102, 0.2) 8px 16px
-    );
+  right: 1.1rem;
+  top: 1rem;
+  width: clamp(5.6rem, 11vw, 7.8rem);
+  height: clamp(5.6rem, 11vw, 7.8rem);
+  background: url("./assets/featured-squid.svg") center / contain no-repeat;
   content: "";
-  opacity: 0.9;
+  opacity: 0.96;
+  transform: none;
 }
 
 .featured-report .eyebrow,
@@ -1170,9 +1221,17 @@ h1 {
   padding: 0 0.55rem;
   border: 2px solid var(--ink);
   border-radius: 999px;
+  color: var(--paper);
   background: var(--accent);
   font-size: 0.75rem;
   font-weight: 950;
+  paint-order: stroke fill;
+  -webkit-text-stroke: 1.4px var(--ink);
+  text-shadow:
+    1px 0 0 var(--ink),
+    -1px 0 0 var(--ink),
+    0 1px 0 var(--ink),
+    0 -1px 0 var(--ink);
 }
 
 .report-tag.orange {

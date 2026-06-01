@@ -1,10 +1,11 @@
 const filters = document.querySelectorAll(".filter");
 const projectCards = document.querySelectorAll(".project-card");
+const projectGroupLabels = document.querySelectorAll(".project-group-label");
 const toast = document.querySelector(".toast");
 let toastTimer;
 
 const revealTargets = document.querySelectorAll(
-  ".proof-card, .section-head, .bridge-card, .project-card, .featured-report, .report-item, .profile-block, .contact"
+  ".proof-card, .section-head, .bridge-card, .project-group-label, .project-card, .featured-report, .report-item, .profile-block, .contact"
 );
 
 if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) {
@@ -38,6 +39,16 @@ filters.forEach((button) => {
       const areas = card.dataset.area.split(" ");
       const visible = filter === "all" || areas.includes(filter);
       card.classList.toggle("hidden", !visible);
+    });
+
+    projectGroupLabels.forEach((label) => {
+      const group = label.dataset.group;
+      const hasVisibleCard = [...projectCards].some((card) => {
+        const areas = card.dataset.area.split(" ");
+        return areas.includes(group) && !card.classList.contains("hidden");
+      });
+
+      label.classList.toggle("hidden", !hasVisibleCard);
     });
   });
 });
