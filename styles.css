@@ -1,6 +1,8 @@
 @font-face {
   font-family: "Chuangkit Jingang";
-  src: url("./assets/fonts/chuangkit-jingang.otf") format("opentype");
+  src:
+    url("./assets/fonts/chuangkit-jingang-subset.woff2") format("woff2"),
+    url("./assets/fonts/chuangkit-jingang.otf") format("opentype");
   font-display: swap;
   font-style: normal;
   font-weight: 400 900;
@@ -8,7 +10,9 @@
 
 @font-face {
   font-family: "Source Han Sans CN Local";
-  src: url("./assets/fonts/source-han-sans-cn-regular.otf") format("opentype");
+  src:
+    url("./assets/fonts/source-han-sans-cn-regular-subset.woff2") format("woff2"),
+    url("./assets/fonts/source-han-sans-cn-regular.otf") format("opentype");
   font-display: swap;
   font-style: normal;
   font-weight: 400;
@@ -16,7 +20,9 @@
 
 @font-face {
   font-family: "Source Han Sans CN Bold Local";
-  src: url("./assets/fonts/source-han-sans-cn-bold.otf") format("opentype");
+  src:
+    url("./assets/fonts/source-han-sans-cn-bold-subset.woff2") format("woff2"),
+    url("./assets/fonts/source-han-sans-cn-bold.otf") format("opentype");
   font-display: swap;
   font-style: normal;
   font-weight: 700;
@@ -24,7 +30,9 @@
 
 @font-face {
   font-family: "Avenir Black Local";
-  src: url("./assets/fonts/avenir-black.ttf") format("truetype");
+  src:
+    url("./assets/fonts/avenir-black-subset.woff2") format("woff2"),
+    url("./assets/fonts/avenir-black.ttf") format("truetype");
   font-display: swap;
   font-style: normal;
   font-weight: 900;
