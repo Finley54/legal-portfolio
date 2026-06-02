@@ -357,7 +357,7 @@ code {
 
 @media (max-width: 900px) {
   .report-shell {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .report-toc {
@@ -378,5 +378,228 @@ code {
 
   .flow-row {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .report-topbar {
+    align-items: center;
+    flex-direction: row;
+    gap: 0.75rem;
+    padding: 0.65rem 0.75rem;
+  }
+
+  .report-topbar .brand small {
+    display: none;
+  }
+
+  .back-link {
+    min-height: 2.25rem;
+    padding: 0 0.72rem;
+    box-shadow: 3px 3px 0 var(--ink);
+    font-size: 0.88rem;
+    white-space: nowrap;
+  }
+
+  .report-hero,
+  .report-shell {
+    width: min(100% - 1.25rem, 1120px);
+  }
+
+  .report-hero {
+    padding: 2rem 0 1.25rem;
+  }
+
+  .report-hero h1 {
+    max-width: none;
+    font-size: clamp(2rem, 10.5vw, 3.05rem);
+    line-height: 1.1;
+    text-shadow:
+      0.022em 0.022em 0 rgba(73, 255, 130, 0.22),
+      -0.012em 0.036em 0 rgba(255, 62, 165, 0.14);
+  }
+
+  .report-hero p:not(.eyebrow) {
+    margin-top: 0.9rem;
+    font-size: 0.96rem;
+    line-height: 1.65;
+  }
+
+  .report-tags {
+    gap: 0.42rem;
+    margin-top: 0.85rem;
+  }
+
+  .report-tags span {
+    padding: 0.28rem 0.5rem;
+    font-size: 0.72rem;
+  }
+
+  .report-shell {
+    gap: 0.85rem;
+    margin-bottom: 2.25rem;
+    min-width: 0;
+  }
+
+  .report-toc {
+    display: flex;
+    gap: 0.45rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    max-height: none;
+    padding: 0.7rem;
+    box-shadow: 4px 4px 0 var(--ink);
+    scrollbar-width: none;
+  }
+
+  .report-toc::-webkit-scrollbar {
+    display: none;
+  }
+
+  .report-toc strong,
+  .report-toc a {
+    flex: 0 0 auto;
+  }
+
+  .report-toc strong {
+    display: inline-flex;
+    min-height: 2rem;
+    align-items: center;
+    padding: 0 0.55rem;
+    border: 2px solid var(--ink);
+    border-radius: 999px;
+    color: var(--paper);
+    background: var(--ink);
+    font-size: 0.82rem;
+  }
+
+  .report-toc a {
+    display: inline-flex;
+    max-width: 14rem;
+    min-height: 2rem;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 0.58rem;
+    border: 1.5px solid rgba(23, 21, 18, 0.22);
+    border-radius: 999px;
+    background: rgba(255, 250, 240, 0.82);
+    font-size: 0.78rem;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .report-toc .toc-level-3 {
+    padding-left: 0.58rem;
+  }
+
+  .report-article {
+    padding: 1rem 0.9rem;
+    box-shadow: 5px 5px 0 var(--ink);
+  }
+
+  .report-article h2,
+  .report-article h3,
+  .report-article h4 {
+    scroll-margin-top: 7rem;
+  }
+
+  .report-article h2 {
+    margin: 2rem 0 0.8rem;
+    font-size: clamp(1.38rem, 7vw, 1.82rem);
+    line-height: 1.2;
+  }
+
+  .report-article h3 {
+    margin: 1.65rem 0 0.7rem;
+    font-size: clamp(1.12rem, 5.2vw, 1.35rem);
+  }
+
+  .report-article h4 {
+    margin: 1.25rem 0 0.5rem;
+    font-size: 1rem;
+  }
+
+  .report-article p,
+  .report-article li {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.78;
+  }
+
+  .report-article p {
+    margin: 0.68rem 0;
+  }
+
+  .report-article ul,
+  .report-article ol {
+    gap: 0.35rem;
+    padding-left: 1.15rem;
+  }
+
+  .table-wrap,
+  .report-figure {
+    margin: 0.85rem 0 1.1rem;
+    border-radius: 6px;
+  }
+
+  .table-wrap table,
+  .report-figure img {
+    min-width: 36rem;
+  }
+
+  .table-wrap th,
+  .table-wrap td {
+    padding: 0.58rem 0.62rem;
+    font-size: 0.84rem;
+    line-height: 1.55;
+  }
+
+  .callout {
+    margin: 1rem 0;
+    border-left-width: 7px;
+    box-shadow: 4px 4px 0 rgba(18, 18, 18, 0.12);
+  }
+
+  .callout-title {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.98rem;
+  }
+
+  .callout p {
+    padding: 0.75rem;
+  }
+
+  blockquote {
+    padding: 0.75rem 0.85rem;
+    border-left-width: 6px;
+  }
+
+  .flow-row {
+    grid-template-columns: 1fr;
+    padding: 0.7rem;
+    box-shadow: 3px 3px 0 var(--ink);
+  }
+}
+
+@media (max-width: 420px) {
+  .report-hero h1 {
+    font-size: clamp(1.82rem, 9.6vw, 2.45rem);
+  }
+
+  .report-article {
+    padding: 0.85rem 0.78rem;
+  }
+
+  .report-article p,
+  .report-article li {
+    font-size: 0.92rem;
+  }
+
+  .table-wrap table,
+  .report-figure img {
+    min-width: 32rem;
   }
 }
