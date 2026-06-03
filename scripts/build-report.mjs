@@ -153,7 +153,7 @@ function renderPage({ title, toc, body }) {
         <span class="brand-mark">§</span>
         <span>
           <strong>李子礽</strong>
-          <small>Research Demo</small>
+          <small>互联网方向法律研究报告集</small>
         </span>
       </a>
       <a class="back-link" href="../index.html#reports">返回作品集</a>
